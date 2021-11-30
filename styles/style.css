@@ -1,0 +1,23 @@
+/***SELECTORES POR ETIQUETA***/
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+h1 {
+    color: rgb(43, 33, 33);
+}
+/***SELECTORES DE CLASE***/
+
+.subtitle1 {
+color: black;
+font-size: 2rem;
+}
+
+.subtitle2 {
+color: violet;
+font-size: 2rem;
+}
+
+.name {
+    color: yellow;
+}

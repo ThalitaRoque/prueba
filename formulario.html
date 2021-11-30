@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de contacto</title>
+  </head>
+  <body>
+    <h1>Hola, rellene los sequintes campos</h1>
+    <!-- FORMULARIO -->
+    <form>
+      <fieldset>
+        <legend>Dados personales</legend>
+
+        <label for="fname">Nombre</label>
+        <input id="fname" name="firstname" required />
+
+        <label for="lname">Apellidos</label>
+        <input type="text" id="lname" name="last_name" required />
+
+        <label for="city">Ciudad:</label>
+        <select id="city" name="user_city">
+          <option value="madrid">Madrid</option>
+          <option value="barcelona">Barcelona</option>
+          <option value="valencia">Valencia</option>
+          <option value="granada">Granada</option>
+        </select>
+        <br />
+        <br />
+        <label for="username">Nombre de usuario</label>
+        <input type="text" id="usarname" name="username" />
+
+        <label for="pwd">Contraseña</label>
+        <input
+          type="passaword"
+          id="pwd"
+          name="passaword"
+          placeholder="entre 4 y 10 caracteres"
+          pattern="[A-Za-z0-9]{4,10}"
+        />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="user_name" required />
+
+        <label for="date">Fecha de Nacimiento</label>
+        <input type="date" id="date" name="date_of_birth" />
+        <br/>
+        <label for="fcolor">Color favorito</label>
+        <input type="color" id="fcolor" name="user_color"/>
+
+        <label for="vip">Quieres ser VIP?</label>
+        <input type="checkbox" id="vip" name="user_vip"/>
+    </br>
+</br>
+    <label for="message">Mensaje</label>
+</br>
+<textarea name="user-message" id="message" placeholder="Escribe aqui tu mensaje" cols="30" rows="10"></textarea>
+      </fieldset>
+      <input type"submit">
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
